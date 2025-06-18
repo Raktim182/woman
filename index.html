@@ -443,22 +443,7 @@
     <script src="./public/js/main.js"></script>
 
 
-    <script>
-        // Check if user is logged in
-        window.onload = function () {
-            const token = localStorage.getItem('token');
-            const dashboardLink = document.getElementById('dashboardLink');
-            const loginLinks = document.querySelectorAll('a[href="views/login.html"]');
-            const signupLinks = document.querySelectorAll('a[href="views/signup.html"]');
-
-            if (token) {
-                // Show dashboard link and hide login/signup if user is logged in
-                dashboardLink.style.display = 'inline-block';
-                loginLinks.forEach(link => link.style.display = 'none');
-                signupLinks.forEach(link => link.style.display = 'none');
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
