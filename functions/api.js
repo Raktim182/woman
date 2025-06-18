@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
  
 const cors = require('cors');
 const path = require('path');
-const connectDB = require('./config/db');
+const connectDB = require('../server/config/db');
 require('dotenv').config();
 
  
@@ -22,13 +22,13 @@ connectDB();
 // Middleware
 router.use(cors());
 router.use(express.json());
-router.use('/api/admin', require('./routes/admin'));
+router.use('/api/admin', require('../server/./routes/admin'));
 // Serve static files
 router.use(express.static(path.join(__dirname, '../')));
 
 // Routes
-router.use('/api/auth', require('./routes/auth'));
-router.use('/api/location', require('./routes/location'));
+router.use('/api/auth', require('../server/./routes/auth'));
+router.use('/api/location', require('../server/./routes/location'));
 
 // Serve HTML files
 router.get('/', (req, res) => {
