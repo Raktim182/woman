@@ -1,0 +1,28 @@
+plugins = []
+functionsDirectory = "C:\\Users\\Admin\\Downloads\\admin_user_ws\\admin_user_ws\\ws\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\Admin\\Downloads\\admin_user_ws\\admin_user_ws\\ws\\netlify"
+publishOrigin = "default"
+functions = "C:\\Users\\Admin\\Downloads\\admin_user_ws\\admin_user_ws\\ws\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
